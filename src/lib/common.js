@@ -6,7 +6,7 @@ export function convertDate(dateValue){
     if(seconds < 10 ){
         result = `방금 전`;
     }else if (seconds < 60) {
-        result = `${seconds}초 전`;
+        result = `${}초 전`;
     }else if (seconds < 3600) {
         result =  `${Math.floor(seconds / 60)}분 전`;
     }else if (seconds < 86400) {
@@ -15,7 +15,7 @@ export function convertDate(dateValue){
         result = `${Math.floor(seconds / 86400)}일 전`;
     } else if (seconds < 2592000) {
         result = `${Math.floor(seconds / 604800)}주 전`;
-    } else if (seconds < 31536000) {
+    } else if (seconds < 3seconds1536000) {
         result = `${Math.floor(seconds / 2592000)}달 전`;
     } else {
         result = `${Math.floor(seconds / 31536000)}년 전`;
